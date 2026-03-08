@@ -1,0 +1,111 @@
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 32px;
+    max-width: 720px;
+    margin: 1.5rem auto;
+}
+
+.book-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    perspective: 600px;
+}
+
+.content-wrapper .book-card,
+.content-wrapper .book-card:hover {
+    border-bottom: none;
+}
+
+.book-cover {
+    position: relative;
+    border-radius: 2px 6px 6px 2px;
+    overflow: hidden;
+    transform-origin: left center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow:
+        6px 6px 12px rgba(0, 0, 0, 0.2),
+        1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* 책등 (왼쪽 모서리) */
+.book-cover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.05));
+    z-index: 1;
+}
+
+/* 표지 광택 */
+.book-cover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 6px;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(
+        115deg,
+        rgba(255, 255, 255, 0.15) 0%,
+        rgba(255, 255, 255, 0) 40%
+    );
+    z-index: 1;
+    pointer-events: none;
+}
+
+.book-card:hover .book-cover {
+    transform: rotateY(-8deg);
+    box-shadow:
+        10px 10px 20px rgba(0, 0, 0, 0.25),
+        2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-cover img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.book-info {
+    padding: 10px 0 0;
+    text-align: center;
+}
+
+.book-year {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--yonsei-blue, #00205B);
+    letter-spacing: 0.03em;
+}
+
+@media (max-width: 680px) {
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px 24px;
+    }
+
+    .book-cover img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 400px) {
+    .book-grid {
+        gap: 24px 16px;
+    }
+
+    .book-cover img {
+        height: 180px;
+    }
+
+    .book-year {
+        font-size: 14px;
+    }
+}
