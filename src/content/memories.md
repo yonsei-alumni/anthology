@@ -2,7 +2,7 @@
 
 그 시절의 PC통신, 입시 기록, 캠퍼스를 다시 만나볼 수 있는 세 곳을 소개합니다.
 
-## 1. 갈무리 보관소 (ATDT): PC통신 시절의 게시글
+## 1. 1997년 모집요강
 
 <div class="memory-link"><a href="http://atdt.benelog.net/" target="_blank">http://atdt.benelog.net/</a></div>
 
@@ -37,7 +37,7 @@
 </li>
 </ol>
 
-## 2. 연세유니언즈 아카이브: 옛 합격자 명단
+## 2. 1997년 합격자 명단
 
 <div class="memory-link"><a href="https://yonsei-unions-archive.vercel.app/" target="_blank">https://yonsei-unions-archive.vercel.app/</a></div>
 
@@ -49,7 +49,7 @@
 * 신문 쪽의 글자 위에 마우스를 올리면 수험번호와 이름이 표시됩니다.
 * 복원된 글자는 OCR 자료라 오탈자가 있을 수 있으며, 오류나 수정 사항은 안내된 이메일로 알려주시면 됩니다.
 
-## 3. 신촌 캠퍼스 1997: 캠퍼스 산책 게임
+## 3. 1997년 신촌 캠퍼스 산책
 
 <div class="memory-link"><a href="https://yonsei-1997.benelog.net/" target="_blank">https://yonsei-1997.benelog.net/</a></div>
 
