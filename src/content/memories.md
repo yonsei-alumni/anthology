@@ -37,7 +37,7 @@
 </li>
 </ol>
 
-## 2. 2026년 연세유니언즈 아카이브: 옛 합격자 명단
+## 2. 연세유니언즈 아카이브: 옛 합격자 명단
 
 <div class="memory-link"><a href="https://yonsei-unions-archive.vercel.app/" target="_blank">https://yonsei-unions-archive.vercel.app/</a></div>
 
