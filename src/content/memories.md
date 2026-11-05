@@ -53,7 +53,13 @@
 
 <div class="memory-link"><a href="https://yonsei-1997.benelog.net/" target="_blank">https://yonsei-1997.benelog.net/</a></div>
 
-<img class="memory-shot" src="memory-campus1997.jpg" alt="신촌 캠퍼스 1997 시작 화면">
+<img class="memory-shot" src="memory-campus1997-1.jpg" alt="1997년 5월 백양로를 내려다본 실제 사진">
+
+<img class="memory-shot" src="memory-campus1997-2.jpg" alt="같은 시점에서 본 버드 아이뷰">
+
+<img class="memory-shot" src="memory-campus1997-3.jpg" alt="연고전 현수막이 걸린 10월 백양로 산책">
+
+<img class="memory-shot" src="memory-campus1997-4.jpg" alt="언더우드관 전경">
 
 1997년 5월의 신촌캠퍼스를 정문에서 백양로를 따라 걸어 볼 수 있는 3D 산책 게임입니다. 중앙도서관, 학생회관, 노천극장, 언더우드관 등을 돌아보며 그 시절 사진과 이야기가 담긴 '추억 카드'를 열고 스탬프를 모을 수 있습니다.
 
