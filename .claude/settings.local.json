@@ -2,14 +2,8 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:www.yonsei.ac.kr)",
-      "Bash(python3:*)",
       "Bash(./build.sh:*)",
-      "Bash(git add:*)",
-      "Bash(git commit:*)",
-      "Bash(git push:*)",
-      "WebFetch(domain:ibook.yonsei.ac.kr)",
-      "Bash(curl:*)",
-      "Bash(ls:*)"
+      "WebFetch(domain:ibook.yonsei.ac.kr)"
     ]
   }
 }

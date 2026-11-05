@@ -1,6 +1,10 @@
 # 졸업 25주년 재상봉 기념집
 
 <div class="book-grid">
+<a class="book-card" href="https://ibook.yonsei.ac.kr/Viewer/LY9LQXBQN93J" target="_blank">
+<div class="book-cover"><img src="cover-2026.jpg" alt="2026년 기념집"></div>
+<div class="book-info"><span class="book-year">2026년(97,95학번)</span></div>
+</a>
 <a class="book-card" href="https://ibook.yonsei.ac.kr/Viewer/GEFQ24RMWHC7" target="_blank">
 <div class="book-cover"><img src="cover-2025.jpg" alt="2025년 기념집"></div>
 <div class="book-info"><span class="book-year">2025년(96,94학번)</span></div>

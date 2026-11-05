@@ -24,4 +24,5 @@
 * 방법 2-2 : 기고문이 담긴 '구글 문서'를 해당 폴더 아래에 직접 생성하거나 경로 이동을 합니다.
 
 ## 참고 자료
+* [2026년 문집](https://ibook.yonsei.ac.kr/Viewer/LY9LQXBQN93J)
 * [2025년 문집](https://ibook.yonsei.ac.kr/Viewer/GEFQ24RMWHC7)
