@@ -2,7 +2,7 @@
 
 그 시절의 PC통신, 입시 기록, 캠퍼스를 다시 만나볼 수 있는 세 곳을 소개합니다.
 
-## 1. 갈무리 보관소 (ATDT) — PC통신 시절의 게시글
+## 1. 갈무리 보관소 (ATDT): PC통신 시절의 게시글
 
 <div class="memory-link"><a href="http://atdt.benelog.net/" target="_blank">http://atdt.benelog.net/</a></div>
 
@@ -12,32 +12,32 @@
 
 <ol class="memory-steps">
 <li>
-<p><strong>시작 화면</strong> — 사이트에 들어가면 DOS가 부팅되고 '이야기 5.3' 화면이 나타납니다. 아무 키나 누르거나 화면을 누르세요.</p>
+<p><strong>시작 화면</strong>: 사이트에 들어가면 DOS가 부팅되고 '이야기 5.3' 화면이 나타납니다. 아무 키나 누르거나 화면을 누르세요.</p>
 <img src="memory-atdt-1.jpg" alt="이야기 5.3 시작 화면">
 </li>
 <li>
-<p><strong>전화 걸기</strong> — 전화번호부에서 <code>1 갈무리 보관소 (555-1996)</code>가 선택된 상태로 <code>Enter</code>를 누르면 접속합니다.</p>
+<p><strong>전화 걸기</strong>: 전화번호부에서 <code>1 갈무리 보관소 (555-1996)</code>가 선택된 상태로 <code>Enter</code>를 누르면 접속합니다.</p>
 <img src="memory-atdt-2.jpg" alt="전화번호부 화면">
 </li>
 <li>
-<p><strong>접속 완료</strong> — 손님(GUEST)으로 입장하며 로그인은 필요 없습니다. 아무 키나 누르면 주메뉴로 넘어갑니다.</p>
+<p><strong>접속 완료</strong>: 손님(GUEST)으로 입장하며 로그인은 필요 없습니다. 아무 키나 누르면 주메뉴로 넘어갑니다.</p>
 <img src="memory-atdt-3.jpg" alt="갈무리 보관소 첫 화면">
 </li>
 <li>
-<p><strong>주메뉴에서 6번 선택</strong> — <code>6</code>을 입력하고 <code>Enter</code>를 누르면 '입시 · 학교' 게시판으로 들어갑니다.</p>
+<p><strong>주메뉴에서 6번 선택</strong>: <code>6</code>을 입력하고 <code>Enter</code>를 누르면 '입시 · 학교' 게시판으로 들어갑니다.</p>
 <img src="memory-atdt-4.jpg" alt="갈무리 보관소 주메뉴">
 </li>
 <li>
-<p><strong>게시글 81번 열기</strong> — 목록에서 <code>81</code> '연세대 97학년도 모집요강'을 입력하고 <code>Enter</code>를 누릅니다.</p>
+<p><strong>게시글 81번 열기</strong>: 목록에서 <code>81</code> '연세대 97학년도 모집요강'을 입력하고 <code>Enter</code>를 누릅니다.</p>
 <img src="memory-atdt-5.jpg" alt="입시·학교 게시판 목록">
 </li>
 <li>
-<p><strong>도착</strong> — 주소가 <a href="https://atdt.benelog.net/#YONSEI" target="_blank">https://atdt.benelog.net/#YONSEI</a>로 바뀌며 1996년 12월에 갈무리된 97학년도 모집요강이 열립니다. 이 주소로 바로 들어가도 됩니다.</p>
+<p><strong>도착</strong>: 주소가 <a href="https://atdt.benelog.net/#YONSEI" target="_blank">https://atdt.benelog.net/#YONSEI</a>로 바뀌며 1996년 12월에 갈무리된 97학년도 모집요강이 열립니다. 이 주소로 바로 들어가도 됩니다.</p>
 <img src="memory-atdt-6.jpg" alt="연세대 97학년도 모집요강 게시글">
 </li>
 </ol>
 
-## 2. 2026년 연세유니언즈 아카이브 — 옛 합격자 명단
+## 2. 2026년 연세유니언즈 아카이브: 옛 합격자 명단
 
 <div class="memory-link"><a href="https://yonsei-unions-archive.vercel.app/" target="_blank">https://yonsei-unions-archive.vercel.app/</a></div>
 
@@ -49,7 +49,7 @@
 * 신문 쪽의 글자 위에 마우스를 올리면 수험번호와 이름이 표시됩니다.
 * 복원된 글자는 OCR 자료라 오탈자가 있을 수 있으며, 오류나 수정 사항은 안내된 이메일로 알려주시면 됩니다.
 
-## 3. 신촌 캠퍼스 1997 — 캠퍼스 산책 게임
+## 3. 신촌 캠퍼스 1997: 캠퍼스 산책 게임
 
 <div class="memory-link"><a href="https://yonsei-1997.benelog.net/" target="_blank">https://yonsei-1997.benelog.net/</a></div>
 
