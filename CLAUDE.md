@@ -4,12 +4,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-A static website for Yonsei University alumni anthology (연세대학교 졸업생 문집). Content is written in Markdown, converted to HTML via a shell-based build pipeline, and deployed to Surge.
+A static website for Yonsei University alumni anthology (연세대학교 졸업생 문집). Content is written in Markdown, converted to HTML via a shell-based build pipeline, and deployed to GitHub Pages (https://yonsei-reunion.github.io).
 
 ## Build & Deploy
 
 - **Build**: `./build.sh` — converts `src/content/*.md` to `public/*.html` using pandoc. Requires `pandoc` installed.
-- **Deploy**: `./publish.sh` — deploys `public/` to `yonsei.surge.sh` via Surge. Requires `surge` CLI installed.
+- **Deploy**: pushing to `main` triggers `.github/workflows/deploy.yml`, which runs `./build.sh` and deploys `public/` to GitHub Pages. The GitHub repo is `yonsei-reunion/yonsei-reunion.github.io`.
 
 ## Architecture
 

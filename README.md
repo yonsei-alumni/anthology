@@ -2,12 +2,11 @@
 
 연세대학교 졸업생 문집 웹사이트입니다.
 
-- 배포 주소: https://yonsei.surge.sh
+- 배포 주소: https://yonsei-reunion.github.io
 
 ## 사전 준비
 
 - [pandoc](https://pandoc.org/installing.html)
-- [surge](https://surge.sh/) (`npm install -g surge`)
 
 ## 빌드
 
@@ -19,11 +18,7 @@
 
 ## 배포
 
-```bash
-./publish.sh
-```
-
-`public/` 디렉토리를 [yonsei.surge.sh](https://yonsei.surge.sh)에 배포합니다.
+`main` 브랜치에 push하면 GitHub Actions(`.github/workflows/deploy.yml`)가 빌드 후 `public/` 디렉토리를 GitHub Pages([yonsei-reunion.github.io](https://yonsei-reunion.github.io))에 배포합니다.
 
 ## 디렉토리 구조
 
