@@ -9,7 +9,7 @@
 | 연결할 도메인 | `reunion.yonsei.ac.kr` |
 | 현재 사이트 주소 | https://yonsei-reunion.github.io |
 | 호스팅 | GitHub Pages (정적 HTML 웹사이트) |
-| 요청 작업 | `yonsei.ac.kr` 영역에 CNAME 레코드 1건 추가 |
+| 요청 작업 | `yonsei.ac.kr` 영역에 CNAME 레코드 1건 추가 (+ 도메인 소유 확인용 TXT 레코드 1건, 권장) |
 
 사이트는 GitHub Pages에서 운영하므로 학교 서버나 IP를 따로 쓰지 않습니다. DNS 레코드만 추가해 주시면 됩니다.
 
@@ -47,13 +47,19 @@ CNAME 대신 아래 A/AAAA 레코드로도 연결할 수 있습니다. 다만 Gi
 | `reunion` | AAAA | `2606:50c0:8002::153` |
 | `reunion` | AAAA | `2606:50c0:8003::153` |
 
-## 선택 사항: 도메인 소유 확인 TXT 레코드 (권장)
+## 함께 요청 사항: 도메인 소유 확인 TXT 레코드 (권장)
 
-GitHub에서 도메인 소유 확인을 마쳐 두면 다른 GitHub 계정이 `reunion.yonsei.ac.kr`을 자기 사이트에 연결할 수 없습니다(서브도메인 탈취 방지). 가능하시면 아래 레코드도 함께 추가해 주십시오. 값은 GitHub에서 발급받아 따로 전달드리겠습니다.
+GitHub에서 도메인 소유 확인을 마쳐 두면 다른 GitHub 계정이 `reunion.yonsei.ac.kr`을 자기 사이트에 연결할 수 없습니다(서브도메인 탈취 방지). 가능하시면 아래 레코드도 함께 추가해 주십시오.
 
 | 이름(호스트) | 유형 | 값 |
 |---|---|---|
-| `_github-pages-challenge-yonsei-reunion.reunion` | TXT | (별도 전달) |
+| `_github-pages-challenge-yonsei-reunion.reunion` (= `_github-pages-challenge-yonsei-reunion.reunion.yonsei.ac.kr.`) | TXT | `241793b3d4d38bea7fb5361821a692` |
+
+BIND zone 파일 형식으로는 다음 한 줄입니다.
+
+```
+_github-pages-challenge-yonsei-reunion.reunion    IN    TXT    "241793b3d4d38bea7fb5361821a692"
+```
 
 ## HTTPS 인증서
 
@@ -80,14 +86,22 @@ yonsei-reunion.github.io.
 
 Windows에서는 `nslookup reunion.yonsei.ac.kr`을 실행했을 때 별칭(Aliases)에 `yonsei-reunion.github.io`가 나오면 됩니다.
 
+TXT 레코드는 다음과 같이 조회됩니다.
+
+```
+$ dig +short TXT _github-pages-challenge-yonsei-reunion.reunion.yonsei.ac.kr
+"241793b3d4d38bea7fb5361821a692"
+```
+
 ## 이후 진행
 
 DNS 반영이 확인되면 저희 쪽에서 다음 작업을 진행합니다. 학교 쪽에서 추가로 하실 일은 없습니다.
 
-1. GitHub Pages 설정에 사용자 지정 도메인 `reunion.yonsei.ac.kr`을 등록합니다.
-2. HTTPS 인증서가 발급되면 HTTPS 접속을 강제합니다.
-3. 이후 기존 주소(https://yonsei-reunion.github.io)로 접속하면 https://reunion.yonsei.ac.kr 로 자동 이동합니다.
+1. TXT 레코드가 조회되면 GitHub에서 도메인 소유 확인을 완료합니다.
+2. GitHub Pages 설정에 사용자 지정 도메인 `reunion.yonsei.ac.kr`을 등록합니다.
+3. HTTPS 인증서가 발급되면 HTTPS 접속을 강제합니다.
+4. 이후 기존 주소(https://yonsei-reunion.github.io)로 접속하면 https://reunion.yonsei.ac.kr 로 자동 이동합니다.
 
 ## 사이트 운영을 종료할 때
 
-사이트를 내리게 되면 미리 알려드리겠습니다. 그때 위의 CNAME 레코드도 삭제해 주십시오. GitHub 쪽 설정만 지우고 CNAME 레코드를 남겨 두면 다른 사람이 이 주소를 가져가 쓸 수 있습니다.
+사이트를 내리게 되면 미리 알려드리겠습니다. 그때 위의 CNAME 레코드(와 TXT 레코드)도 삭제해 주십시오. GitHub 쪽 설정만 지우고 CNAME 레코드를 남겨 두면 다른 사람이 이 주소를 가져가 쓸 수 있습니다.
