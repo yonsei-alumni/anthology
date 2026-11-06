@@ -1,10 +1,12 @@
 # 1997 시간 여행
 
-그 시절의 PC통신, 합격자 명단, 캠퍼스를 다시 만나볼 수 있는 세 곳을 소개합니다.
+그 시절을 다시 만나볼 수 있는 세 곳을 소개합니다.
+
+* PC통신 게시판에 올라온 모집 요강 : <a href="http://atdt.benelog.net/" target="_blank">http://atdt.benelog.net/</a>
+* 신문에 실린 합격자 명단 : <a href="https://yonsei-unions-archive.vercel.app/" target="_blank">https://yonsei-unions-archive.vercel.app/</a>
+* 신촌 캠퍼스 산책 : <a href="https://yonsei-1997.benelog.net/" target="_blank">https://yonsei-1997.benelog.net/</a>
 
 ## 1. 1997년 모집요강
-
-<div class="memory-link"><a href="http://atdt.benelog.net/" target="_blank">http://atdt.benelog.net/</a></div>
 
 1994~1997년 하이텔·천리안·나우누리 게시판에 올라왔던 글 119편을 모아 둔 곳입니다. 옛 통신 프로그램 '이야기 5.3'의 화면을 그대로 재현해, 접속부터 게시판 탐색까지 그 시절 방식으로 체험할 수 있습니다.
 
@@ -29,9 +31,10 @@
 </li>
 </ol>
 
-## 2. 1997년 합격자 명단
 
-<div class="memory-link"><a href="https://yonsei-unions-archive.vercel.app/" target="_blank">https://yonsei-unions-archive.vercel.app/</a></div>
+<div class="memory-link"><a href="http://atdt.benelog.net/" target="_blank">http://atdt.benelog.net/</a></div>
+
+## 2. 1997년 합격자 명단
 
 97학번 김관수 동문이 오랜 세월 보관해 온 신문 기록을 이중윤 동문이 디지털 자료로 복원한 아카이브입니다. 당시 한국대학신문에 실린 97학년도 합격자 명단을 쪽별로 넘겨 보고, 이름이나 수험번호로 검색할 수 있습니다.
 
@@ -54,9 +57,10 @@
 
 * 복원된 글자는 OCR 자료라 오탈자가 있을 수 있으며, 오류나 수정 사항은 안내된 이메일로 알려주시면 됩니다.
 
-## 3. 1997년 신촌 캠퍼스 산책
 
-<div class="memory-link"><a href="https://yonsei-1997.benelog.net/" target="_blank">https://yonsei-1997.benelog.net/</a></div>
+<div class="memory-link"><a href="https://yonsei-unions-archive.vercel.app/" target="_blank">https://yonsei-unions-archive.vercel.app/</a></div>
+
+## 3. 1997년 신촌 캠퍼스 산책
 
 <img class="memory-shot" src="memory-campus1997-1.jpg" alt="1997년 5월 백양로를 내려다본 실제 사진">
 
@@ -71,3 +75,6 @@
 * 4월 벚꽃, 5월 신록, 10월 은행잎 중 계절을 고를 수 있고, 10월에는 연고전 응원 현수막이 걸립니다.
 * 하늘에서 내려다보는 '캠퍼스 둘러보기(버드 아이뷰)'를 지원합니다.
 * PC에서는 방향키(또는 W·A·S·D)로 걷고, 모바일에서는 화면의 조이스틱으로 움직입니다.
+
+<div class="memory-link"><a href="https://yonsei-1997.benelog.net/" target="_blank">https://yonsei-1997.benelog.net/</a></div>
+
