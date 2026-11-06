@@ -17,17 +17,26 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      PANDOC_VERSION: "3.13"
+      PANDOC_SHA256: 38aa33b325a2bc96a4c39409631212db55702f564250bcdbead180b3bf646389
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Install Pandoc
-        run: sudo apt-get update && sudo apt-get install -y pandoc
+        run: |
+          curl -fsSL -o "$RUNNER_TEMP/pandoc.tar.gz" \
+            "https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION}-linux-amd64.tar.gz"
+          echo "${PANDOC_SHA256}  $RUNNER_TEMP/pandoc.tar.gz" | sha256sum -c -
+          tar -xzf "$RUNNER_TEMP/pandoc.tar.gz" -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/pandoc-${PANDOC_VERSION}/bin" >> "$GITHUB_PATH"
+          "$RUNNER_TEMP/pandoc-${PANDOC_VERSION}/bin/pandoc" --version
 
       - name: Build
         run: ./build.sh
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: public
 
@@ -40,4 +49,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
