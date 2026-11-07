@@ -1,3 +1,7 @@
+---
+description: "PC통신 게시판의 97학년도 모집요강, 신문에 실린 합격자 명단, 1997년 신촌 캠퍼스 산책까지. 그 시절을 다시 만나볼 수 있는 세 곳을 소개합니다."
+---
+
 # 1997 시간 여행
 
 그 시절을 다시 만나볼 수 있는 세 곳을 소개합니다.
@@ -15,24 +19,23 @@
 <ol class="memory-steps">
 <li>
 <p><strong>접속하기</strong>: 사이트에 들어가면 DOS가 부팅되고 '이야기 5.3' 화면이 나타납니다. 아무 키나 누르면 전화번호부가 열리고, <code>1 갈무리 보관소 (555-1996)</code>가 선택된 상태에서 <code>Enter</code>를 누르면 접속합니다. 손님(GUEST)으로 들어가므로 로그인은 필요 없습니다.</p>
-<img src="memory-atdt-1.jpg" alt="이야기 5.3 시작 화면">
+<img src="memory-atdt-1.jpg" alt="이야기 5.3 시작 화면" width="1509" height="812" loading="lazy">
 </li>
 <li>
 <p><strong>주메뉴에서 6번 선택</strong>: 접속 안내 화면에서 아무 키나 누르면 주메뉴가 나옵니다. <code>6</code>을 입력하고 <code>Enter</code>를 누르면 '입시 · 학교' 게시판으로 들어갑니다.</p>
-<img src="memory-atdt-2.jpg" alt="갈무리 보관소 주메뉴">
+<img src="memory-atdt-2.jpg" alt="갈무리 보관소 주메뉴" width="1509" height="812" loading="lazy">
 </li>
 <li>
 <p><strong>게시글 81번 열기</strong>: 목록에서 <code>81</code> '연세대 97학년도 모집요강'을 입력하고 <code>Enter</code>를 누릅니다.</p>
-<img src="memory-atdt-3.jpg" alt="입시·학교 게시판 목록">
+<img src="memory-atdt-3.jpg" alt="입시·학교 게시판 목록" width="1509" height="812" loading="lazy">
 </li>
 <li>
 <p><strong>도착</strong>: 주소가 <a href="https://atdt.benelog.net/#YONSEI" target="_blank">https://atdt.benelog.net/#YONSEI</a>로 바뀌며 1996년 12월에 갈무리된 97학년도 모집요강이 열립니다. 이 주소로 바로 들어가도 됩니다.</p>
-<img src="memory-atdt-4.jpg" alt="연세대 97학년도 모집요강 게시글">
+<img src="memory-atdt-4.jpg" alt="연세대 97학년도 모집요강 게시글" width="1509" height="812" loading="lazy">
 </li>
 </ol>
 
-
-<div class="memory-link"><a href="http://atdt.benelog.net/" target="_blank">http://atdt.benelog.net/</a></div>
+<p class="site-button-wrap"><a class="site-button" href="http://atdt.benelog.net/" target="_blank">사이트 열기<span class="site-button-url">atdt.benelog.net</span></a></p>
 
 ## 2. 1997년 합격자 명단
 
@@ -43,32 +46,23 @@
 <ol class="memory-steps">
 <li>
 <p><strong>입장 안내와 동의</strong>: 사이트에 들어가면 이 기록이 복원된 내력과 저작권·이용 범위에 관한 안내가 먼저 나옵니다. 아래쪽의 입장 퀴즈에 답하고 이용 범위 동의란에 표시한 뒤 '동의하고 아카이브 입장'을 누릅니다. 동의 여부는 서버에 저장되지 않고 지금 쓰는 브라우저에서만 유지됩니다.</p>
-<img src="memory-unions-1.jpg" alt="입장 퀴즈와 동의 화면">
+<img src="memory-unions-1.jpg" alt="입장 퀴즈와 동의 화면" width="1388" height="380" loading="lazy">
 </li>
 <li>
 <p><strong>신문 넘겨 보기</strong>: 입장하면 특차 합격자 명단이 실린 3쪽이 먼저 열립니다. 화면 양옆의 화살표로 쪽을 넘기거나, 검색창에 이름이나 수험번호를 두 글자 이상 입력해 찾아볼 수 있습니다. 신문 쪽의 글자 위에 마우스를 올리면 수험번호와 이름이 표시됩니다.</p>
-<img src="memory-unions-2.jpg" alt="한국대학신문 3쪽, 97학년도 특차 합격자 명단">
+<img src="memory-unions-2.jpg" alt="한국대학신문 3쪽, 97학년도 특차 합격자 명단" width="1388" height="747" loading="lazy">
 </li>
 <li>
 <p><strong>연세대 합격자 명단</strong>: 신문의 마지막 쪽인 11쪽에는 '연세대 97학년도 합격자 명단'이 실려 있습니다.</p>
-<img src="memory-unions-3.jpg" alt="한국대학신문 11쪽, 연세대 97학년도 합격자 명단">
+<img src="memory-unions-3.jpg" alt="한국대학신문 11쪽, 연세대 97학년도 합격자 명단" width="1388" height="747" loading="lazy">
 </li>
 </ol>
 
 * 복원된 글자는 OCR 자료라 오탈자가 있을 수 있으며, 오류나 수정 사항은 안내된 이메일로 알려주시면 됩니다.
 
-
-<div class="memory-link"><a href="https://yonsei-unions-archive.vercel.app/" target="_blank">https://yonsei-unions-archive.vercel.app/</a></div>
+<p class="site-button-wrap"><a class="site-button" href="https://yonsei-unions-archive.vercel.app/" target="_blank">사이트 열기<span class="site-button-url">yonsei-unions-archive.vercel.app</span></a></p>
 
 ## 3. 1997년 신촌 캠퍼스 산책
-
-<img class="memory-shot" src="memory-campus1997-1.jpg" alt="1997년 5월 백양로를 내려다본 실제 사진">
-
-<img class="memory-shot" src="memory-campus1997-2.jpg" alt="같은 시점에서 본 버드 아이뷰">
-
-<img class="memory-shot" src="memory-campus1997-3.jpg" alt="연고전 현수막이 걸린 10월 백양로 산책">
-
-<img class="memory-shot" src="memory-campus1997-4.jpg" alt="언더우드관 전경">
 
 1997년 5월의 신촌캠퍼스를 정문에서 백양로를 따라 걸어 볼 수 있는 3D 산책 게임입니다. 중앙도서관, 학생회관, 노천극장, 언더우드관 등을 돌아보며 그 시절 사진과 이야기가 담긴 '추억 카드'를 열고 스탬프를 모을 수 있습니다.
 
@@ -76,5 +70,12 @@
 * 하늘에서 내려다보는 '캠퍼스 둘러보기(버드 아이뷰)'를 지원합니다.
 * PC에서는 방향키(또는 W·A·S·D)로 걷고, 모바일에서는 화면의 조이스틱으로 움직입니다.
 
-<div class="memory-link"><a href="https://yonsei-1997.benelog.net/" target="_blank">https://yonsei-1997.benelog.net/</a></div>
+<div class="memory-gallery">
+<figure><img src="memory-campus1997-1.jpg" alt="1997년 5월 백양로를 내려다본 실제 사진" width="1388" height="884" loading="lazy"><figcaption>1997년 5월 백양로를 내려다본 실제 사진</figcaption></figure>
+<figure><img src="memory-campus1997-2.jpg" alt="같은 시점에서 본 버드 아이뷰" width="1173" height="747" loading="lazy"><figcaption>같은 시점에서 본 버드 아이뷰</figcaption></figure>
+<figure><img src="memory-campus1997-3.jpg" alt="연고전 현수막이 걸린 10월 백양로 산책" width="1388" height="747" loading="lazy"><figcaption>연고전 현수막이 걸린 10월 백양로 산책</figcaption></figure>
+<figure><img src="memory-campus1997-4.jpg" alt="언더우드관 전경" width="1388" height="747" loading="lazy"><figcaption>언더우드관 전경</figcaption></figure>
+</div>
+
+<p class="site-button-wrap"><a class="site-button" href="https://yonsei-1997.benelog.net/" target="_blank">사이트 열기<span class="site-button-url">yonsei-1997.benelog.net</span></a></p>
 

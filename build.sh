@@ -6,6 +6,8 @@ SRC_DIR="$SCRIPT_DIR/src"
 TEMPLATE_DIR="$SRC_DIR/template"
 CONTENT_DIR="$SRC_DIR/content"
 PUBLIC_DIR="$SCRIPT_DIR/public"
+# Absolute site URL used for link-preview (Open Graph) tags
+SITE_URL="https://yonsei-reunion.github.io"
 
 # Clean and prepare public directory
 rm -rf "$PUBLIC_DIR"
@@ -29,10 +31,24 @@ for md_file in "$CONTENT_DIR"/*.md; do
         title="$filename"
     fi
 
+    # Home page is served at the site root and keeps its title without the site-name suffix
+    if [ "$filename" = "index" ]; then
+        page_path=""
+        home_flag=(--metadata is-home=true)
+    else
+        page_path="${filename}.html"
+        home_flag=()
+    fi
+
     # Convert markdown to HTML using pandoc template
-    pandoc --from markdown --to html \
+    # -smart: pandoc's smart quotes mistake a closing quote followed by a Korean particle
+    # (e.g. '연세'를) for an apostrophe, so quotes are kept exactly as typed.
+    pandoc --from markdown-smart --to html --wrap=none \
         --template="$TEMPLATE_DIR/page.html" \
         --metadata title="$title" \
+        --metadata site-url="$SITE_URL" \
+        --metadata page-path="$page_path" \
+        "${home_flag[@]}" \
         "$md_file" > "$PUBLIC_DIR/${filename}.html"
 
     # Mark current page's nav link as active (only in nav, not in site-title)

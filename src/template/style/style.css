@@ -6,8 +6,12 @@
     --yonsei-blue-accent: #1B4F9B;
     --yonsei-gray: #F5F5F5;
     --yonsei-dark-gray: #333333;
+    --yonsei-muted: #666666;
     --yonsei-border: #D9D9D9;
     --yonsei-white: #FFFFFF;
+    /* 본문 한 줄이 40자 안팎이 되도록 사이트 전체 폭을 좁게 잡는다 */
+    --page-width: 780px;
+    --page-gutter: 30px;
 }
 
 * {
@@ -21,6 +25,13 @@ body {
     color: var(--yonsei-dark-gray);
     line-height: 1.7;
     background-color: var(--yonsei-white);
+    /* 한글은 어절 단위로 줄바꿈하고, 긴 URL만 필요할 때 끊는다 */
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    /* 내용이 짧아도 푸터가 화면 맨 아래에 붙도록 */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header */
@@ -31,9 +42,9 @@ body {
 }
 
 .header-top {
-    max-width: 1200px;
+    max-width: var(--page-width);
     margin: 0 auto;
-    padding: 18px 30px;
+    padding: 18px var(--page-gutter);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,9 +74,9 @@ body {
 }
 
 .header-nav ul {
-    max-width: 1200px;
+    max-width: var(--page-width);
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 var(--page-gutter);
     list-style: none;
     display: flex;
     gap: 0;
@@ -95,10 +106,12 @@ body {
 
 /* Main content */
 .content-wrapper {
-    max-width: 1200px;
+    flex: 1;
+    width: 100%;
+    max-width: var(--page-width);
     margin: 0 auto;
-    padding: 40px 30px 60px;
-    min-height: calc(100vh - 260px);
+    padding: 40px var(--page-gutter) 60px;
+    font-size: 17px;
 }
 
 .content-wrapper h1 {
@@ -114,7 +127,7 @@ body {
     font-size: 22px;
     font-weight: 700;
     color: var(--yonsei-blue);
-    margin-top: 32px;
+    margin-top: 40px;
     margin-bottom: 14px;
     padding-left: 12px;
     border-left: 4px solid var(--yonsei-blue-accent);
@@ -130,8 +143,7 @@ body {
 
 .content-wrapper p {
     margin-bottom: 16px;
-    font-size: 16px;
-    line-height: 1.8;
+    line-height: 1.85;
 }
 
 .content-wrapper ul,
@@ -142,27 +154,35 @@ body {
 
 .content-wrapper li {
     margin-bottom: 6px;
-    line-height: 1.7;
+    line-height: 1.75;
 }
 
+/* 본문 링크는 색만이 아니라 밑줄로도 구분한다 */
 .content-wrapper a {
     color: var(--yonsei-blue-accent);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-color 0.2s;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: rgba(27, 79, 155, 0.45);
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.2s;
 }
 
 .content-wrapper a:hover {
-    border-bottom-color: var(--yonsei-blue-accent);
+    text-decoration-color: currentColor;
 }
 
+/* 한글 글꼴에는 이탤릭이 없어 기울임 대신 바탕색과 왼쪽 선으로 인용을 구분한다 */
 .content-wrapper blockquote {
-    margin: 20px 0;
-    padding: 16px 20px;
+    margin: 24px 0;
+    padding: 18px 22px;
     background-color: var(--yonsei-gray);
     border-left: 4px solid var(--yonsei-blue);
-    color: #555;
-    font-style: italic;
+    color: #444;
+    font-size: 16px;
+}
+
+.content-wrapper blockquote p:last-child {
+    margin-bottom: 0;
 }
 
 .content-wrapper code {
@@ -170,6 +190,7 @@ body {
     padding: 2px 6px;
     border-radius: 3px;
     font-size: 14px;
+    word-break: normal;
 }
 
 .content-wrapper pre {
@@ -219,6 +240,22 @@ body {
     background-color: var(--yonsei-gray);
 }
 
+/* 에세이 */
+.essay-author {
+    text-align: right;
+    font-weight: 700;
+}
+
+.essay-figure {
+    margin: 28px 0;
+    text-align: center;
+}
+
+.essay-figure img {
+    display: inline-block;
+    border: 1px solid var(--yonsei-border);
+}
+
 /* Footer */
 .site-footer {
     background-color: var(--yonsei-blue);
@@ -227,9 +264,9 @@ body {
 }
 
 .footer-inner {
-    max-width: 1200px;
+    max-width: var(--page-width);
     margin: 0 auto;
-    padding: 30px;
+    padding: 30px var(--page-gutter);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -247,8 +284,13 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+    :root {
+        --page-gutter: 16px;
+    }
+
     .header-top {
-        padding: 14px 16px;
+        padding-top: 14px;
+        padding-bottom: 14px;
     }
 
     .site-title {
@@ -257,7 +299,6 @@ body {
 
     .header-nav ul {
         flex-wrap: wrap;
-        padding: 0 16px;
     }
 
     .header-nav li a {
@@ -266,28 +307,34 @@ body {
     }
 
     .content-wrapper {
-        padding: 24px 16px 40px;
+        padding-top: 24px;
+        padding-bottom: 40px;
+        font-size: 16px;
     }
 
     .content-wrapper h1 {
         font-size: 22px;
     }
 
+    .content-wrapper h2 {
+        font-size: 20px;
+    }
+
+    .content-wrapper blockquote {
+        padding: 14px 16px;
+        font-size: 15px;
+    }
+
     .footer-inner {
         flex-direction: column;
         gap: 8px;
         text-align: center;
-        padding: 20px 16px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 
 /* 1997 시간 여행 */
-.memory-link {
-    margin: 0.5rem 0 1rem;
-    font-weight: 600;
-    word-break: break-all;
-}
-
 .memory-steps {
     list-style: decimal;
     padding-left: 1.5rem;
@@ -298,12 +345,86 @@ body {
     margin-bottom: 2rem;
 }
 
-.memory-steps li img,
-.memory-shot {
+.memory-steps li img {
     display: block;
     max-width: 100%;
     height: auto;
     margin: 0.75rem 0;
     border: 1px solid var(--yonsei-border);
     border-radius: 4px;
+}
+
+/* 캠퍼스 산책 캡처: 비율이 같은 사진끼리 한 줄에 놓이는 2열 갤러리 */
+.memory-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 1.25rem 0 1.5rem;
+}
+
+.memory-gallery figure {
+    margin: 0;
+}
+
+.memory-gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--yonsei-border);
+    border-radius: 4px;
+}
+
+.content-wrapper .memory-gallery figcaption {
+    display: block;
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--yonsei-muted);
+}
+
+/* 각 섹션 끝의 사이트 바로 가기 버튼 */
+.site-button-wrap {
+    margin: 1.5rem 0 0.5rem;
+}
+
+.content-wrapper a.site-button {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px 10px;
+    padding: 12px 22px;
+    background-color: var(--yonsei-blue);
+    color: var(--yonsei-white);
+    border-radius: 6px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.content-wrapper a.site-button::after {
+    content: '↗';
+    font-weight: 400;
+}
+
+.content-wrapper a.site-button:hover {
+    background-color: var(--yonsei-blue-accent);
+}
+
+.site-button .site-button-url {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.8;
+    word-break: break-all;
+}
+
+@media (max-width: 560px) {
+    .memory-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
 }
